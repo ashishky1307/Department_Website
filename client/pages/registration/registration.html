@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom CSS */
+    .form-container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-top: 50px;
+    }
+
+    body {
+      background-image: linear-gradient(rgb(37, 2, 73), rgb(13, 10, 10));
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+    .color-white{
+      color: white;
+    }
+    h2{
+      color: white;
+    }
+    .button1{
+      background-color: #ccc;
+      color:black;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-container">
+          <h2 class="mb-4">Registration Form</h2>
+          <form>
+            <div class="form-group color-white">
+              <label for="firstName" class="color-white">First Name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="Enter First Name" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName" class="color-white">Last Name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name" required>
+            </div>
+            <div class="form-group">
+              <label for="email" class="color-white">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter Email" required>
+            </div>
+            <div class="form-group">
+              <label for="mobile" class="color-white">Mobile</label>
+              <input type="text" class="form-control" id="mobile" placeholder="Enter Mobile Number" required>
+            </div>
+            <div class="form-group">
+              <label for="branch" class="color-white">Branch</label>
+              <input type="text" class="form-control" id="branch" placeholder="Enter Branch" required>
+            </div>
+            <div class="form-group">
+              <label for="gender" class="color-white">Gender</label>
+              <select class="form-control" id="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="rollNumber" class="color-white">Roll Number</label>
+              <input type="text" class="form-control" id="rollNumber" placeholder="Enter Roll Number" required>
+            </div>
+            <button type="submit" class="btn button1">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="registration.js"></script>
+
+</body>
+
+</html>

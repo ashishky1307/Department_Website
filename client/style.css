@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-image: linear-gradient(rgb(37, 2, 73), rgb(13, 10, 10));
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    /* background: rgb(44, 38, 38); */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 100vw; */
+    /* min-height: 100vh; */
+    color: white;
+}
+
+.header {
+    padding: 20px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.header h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.content1 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #3145fb;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: #fff;
+    /* background-color: #11101b; */
+    margin: 0 5x;
+    font-size: 20px;
+    border-radius: 50px;
+    padding: 10px 25px;
+    margin-left:10px;
+    transition: 0.2s;
+}
+
+.nav-bar ul li a:hover {
+    color: #11101b;
+    background: #fff;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.container1 h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.events {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.events-box {
+    width: 60%;
+    height: 80%;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-bottom: 50px;
+    text-align: center;
+    cursor: pointer;
+    /* Add cursor pointer for hover effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Add transition for smooth hover effect */
+}
+
+.events-box:hover {
+    transform: scale(1.05);
+    /* Zoom out on hover */
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+    /* White shadow on hover */
+}
+
+.events-box img {
+    width: 100%;
+    height: 100%;
+    /*Ensure image fills the box vertically*/
+    object-fit: cover;
+    /* Make image cover the box, maintaining aspect ratio */
+}
+
+.events-box h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.events-box p {
+    line-height: 1.5;
+}
+
+.btn {
+    background-color: #11101b;
+    padding: 10px;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+.btn:hover{
+    background-color:white;
+    color:black;
+}
+
+.content1 p{
+    color:white;
+}
+  .team {
+    text-align: center;
+    padding: 0px 0;
+  }
+
+  .team h1{
+    color:white;
+    margin-top: 0px;
+  }
+
+  .team h2 {
+    margin-bottom: 20px;
+  }
+  
+  .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .member-card {
+    width: 40%;
+    margin-bottom: 100px;
+    text-align: center;
+    background: linear-gradient(to bottom,rgb(48, 3, 93), rgb(13, 10, 10)); /* Blue to black gradient */
+    padding: 20px;
+    border-radius: 5px; /* Add rounded corners */
+    box-sizing: border-box; /* Include padding in width calculation */
+    cursor: pointer; /* Add cursor pointer for hover effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
+  }
+  .member-card:hover{
+    transform: scale(0.95);
+    /* Zoom out on hover */
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+    /* White shadow on hover */
+  }
+  
+  .member-card img {
+    width: 200px; /* Adjust image width as needed */
+    height: 200px;
+    border-radius: 50%; /* Make image circular */
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Add transition for image zoom */
+  }
+
+  .member-card:hover .member-card img {
+    transform: scale(1.1); /* Zoom in image on hover */
+  }
+  
+  .member-card h3,
+  .member-card p {
+    padding-top:10px;
+    color: #fff; /* White text for better readability on dark background */
+  }
+  
+  .member-card p {
+    display: flex;
+    justify-content: center; /* Center logos horizontally */
+    margin-bottom: 0;
+  }
+  
+  .member-card a img {
+    width: 40px; /* Adjust logo size as needed */
+    height: 40px; /* Adjust logo size as needed */
+    margin: 0 5px;
+  }
+  
+  .member-card a {
+    color: #fff; /* White text for links */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 5px;
+  }
+  
+  .member-card:hover {
+    transform: scale(1.05); /* Zoom in slightly on hover */
+  }
+  
+  .footer {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Footer items will align at the top */
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Footer items will wrap onto multiple lines if needed */
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .footer-item {
+    flex: 1; /* Distribute footer items evenly */
+    margin-bottom: 20px;
+    text-align: center; /* Center content of each footer item */
+  }
+  
+  .footer-logo {
+    width: 150px; /* Adjust logo size as needed */
+    margin-bottom: 10px;
+  }
+  
+  .footer-navigation,
+  .footer-contact,
+  .footer-social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-navigation li,
+  .footer-contact li,
+  .footer-social li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-navigation a,
+  .footer-contact a,
+  .footer-social a {
+    color: #ffffff; /* Dark gray text color */
+    text-decoration: none;
+    transition: all 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .footer-navigation a,
+  .footer-contact a,
+  .footer-social a {
+    font-weight: bold;
+  }
+  
+  .footer-social i {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .footer-copyright {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+    padding: 10px 0;
+  }
+  
